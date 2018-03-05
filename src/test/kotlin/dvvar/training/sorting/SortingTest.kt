@@ -1,6 +1,7 @@
 package dvvar.training.sorting
 
 import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments
@@ -28,4 +29,9 @@ class SortingTest {
             Arguments.of(arrayOf(74, 12, -12323, 33, 1, -44, 5, 3)),
             Arguments.of(arrayOf(1, 11, -1, 0, -1111, -11111111, 123, 22, -22, 45, 95, 100, -100, 73, 63, -77))
     )
+
+    @Test
+    fun debug() {
+        quickSort(arrayOf(3, 2, 1))
+    }
 }
